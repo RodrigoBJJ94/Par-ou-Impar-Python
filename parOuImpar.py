@@ -26,4 +26,4 @@ while True:
             print('\033[31mVocê PERDEU\033[m')
             break
     contador += 1
-print(f'\033[31mGAME OVER!\033[m \033[32mVocê VENCEU {contador} vezes')
+print(f'\033[31mGAME OVER!\033[m \033[32mVocê VENCEU {contador} vezes!!!')
