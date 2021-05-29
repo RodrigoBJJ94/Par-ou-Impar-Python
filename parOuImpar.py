@@ -1,13 +1,15 @@
 from random import randint
+from time import sleep
 lista = ['Par', 'Ímpar']
 contador = 0
-print('\033[34mVAMOS JOGAR PAR OU ÍMPAR!\033[m')
+print('\033[35mVAMOS JOGAR PAR OU ÍMPAR!\033[m')
 while True:
     computador = randint(1, 9)
     numero = int(input('Digite um número: '))
     escolha = ' '
     while escolha not in 'PpIi':
         escolha = str(input('Par ou Ímpar? ')).strip().upper()[0]
+        sleep(1)
     print(f'Você escolheu o número {numero} e o computador escolheu o número {computador},', end='')
     if (numero + computador) % 2 == 0:
         print(f' dando um total de {numero + computador} que é PAR')
